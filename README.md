@@ -30,10 +30,10 @@ Press Enter or click = to calculate.
 Press C or Escape to clear the display.
 
 ## File Structure
-calculator-app/
-│
-├── index.html      # Structure of the app
-├── style.css       # Styles and layout
+calculator-app/<br>
+│<br>
+├── index.html      # Structure of the app<br>
+├── style.css       # Styles and layout<br>
 └── script.js       # App functionality
 
 ## Author
