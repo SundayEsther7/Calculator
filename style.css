@@ -1,0 +1,98 @@
+@media (max-width: 500px) {
+  #keys {
+    gap: 8px;
+  }
+
+  #calculator {
+    padding: 15px;
+  }
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+#calculator {
+  background-color: #313131;
+  border-radius: 20px;
+  width: 360px;
+  padding: 20px;
+}
+
+#display {
+  width: 100%;
+  height: 80px;
+  background: #000;
+  color: #fff;
+  border: none;
+  text-align: right;
+  font-size: 2.5rem;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #222;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.operator {
+  background-color: #b33;
+}
+
+#equal {
+  background-color: #0f0;
+  color: #000;
+  grid-column: span 4;
+  height: 70px;
+  border-radius: 35px;
+}
+
+/* Make display look like it has a blinking cursor */
+#display {
+  position: relative;
+  caret-color: transparent; /* hides the real cursor */
+}
+
+/* Create a fake blinking cursor */
+#display::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 60%;
+  background-color: #00ff00; /* Green cursor, matches calculator theme */
+  animation: blink 1s steps(2, start) infinite;
+}
+
+/* Cursor blinking animation */
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
