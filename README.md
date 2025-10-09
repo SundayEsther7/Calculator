@@ -1,5 +1,5 @@
 # Calculator App
-
+---
 A simple, modern calculator built with HTML, CSS, and JavaScript.
 It performs basic arithmetic operations and supports keyboard input.
 
