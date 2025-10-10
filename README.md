@@ -17,7 +17,7 @@ Displays “Invalid input” for incorrect expressions
 
 ## How to Run
 
-Download or clone the project and open in your browser
+Download or clone the project.
 
 Open the folder and run the app by opening index.html in your browser.
 
